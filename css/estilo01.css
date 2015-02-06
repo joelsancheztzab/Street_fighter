@@ -1,0 +1,135 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+body{
+
+  width:100%;
+  height:auto;
+
+}
+
+h1
+{
+  text-align:center;
+  font-size:18px; 
+}
+
+section .divRyu
+{
+  width:70px;
+  margin:0px auto;
+  display:block;
+  height:96px;
+  position:relative;
+  background:url( "../imagenes/ryu.png" ) no-repeat;
+  overflow:hidden;
+  background-position:-9px -105px;
+}
+
+section .divKen
+{
+  width:70px;
+  margin:5px auto;
+  display:block;
+  height:80px;
+  position:relative;
+  background:url( "../imagenes/ken.png" ) no-repeat;
+  overflow:hidden;
+  background-position:12px -641px;
+ 
+}
+
+
+section .divRyu:hover
+{
+ animation : animarRyu 1s steps(7) infinite;
+ -webkit-animation : animarRyu 1s steps(7) infinite;
+ -moz-animation: animarRyu 1s steps(7) infinite;
+ -o-animation: animarRyu 1s steps(7) infinite;
+ -ms-animation: animarRyu 1s steps(7) infinite;
+}
+
+section .ken
+{
+  animation: animarKenSalto 1s steps( 7 ) infinite;
+  -webkit-animation: animarKenSalto 1s steps( 7 ) infinite;
+  -moz-animation: animarKenSalto 1s steps( 7 ) infinite;
+  -o-animation: animarKenSalto 1s steps( 7 ) infinite;
+  -ms-animation: animarKenSalto 1s steps( 7 ) infinite;
+}
+/*******************Ken**************************************/
+@keyframes animarKenSalto
+{
+ from { background-position: 0px -641px;  }
+ to { background-position: -458px -641px; }
+
+}
+ /**********Mozilla************/
+@-moz-keyframes animarKenSalto
+{
+ from { background-position: 12px -641px;  }
+ to { background-position: -481px -641px; }
+
+}
+
+ /**********Google Chrome************/
+@-webkit-keyframes animarKenSalto
+{
+ from { background-position: 12px -641px;  }
+ to { background-position: -481px -641px; }
+
+}
+
+/*********Opera**********************/
+@-o-keyframes animarKenSalto
+{
+ from { background-position: 12px -641px;  }
+ to { background-position: -481px -641px; }
+}
+
+
+/**********Internet explorer************/
+@-ms-keyframes animarKenSalto
+{
+ from { background-position: 12px -641px; }
+ to { background-position: -481px -641px; }
+
+}
+
+
+
+
+/*********************Ryu************************************/
+@keyframes animarRyu
+{
+ from {  background-position: -9px -105px; }
+ to {  background-position:-458px -105px;  }
+}
+/******** mozilla firefox *********/
+@-moz-keyframes animarRyu
+{
+  from { background-position:-9px -105px; }
+  to {  background-position:-458px -105px; }
+}
+/******** Google chrome *********/
+@-webkit-keyframes animarRyu
+{
+  from { background-position:-9px -105px; }
+  to {  background-position:-458px -105px; }
+}
+/******** Opera *********/
+@-o-keyframes animarRyu
+{
+  from { background-position:-9px -105px; }
+  to {  background-position:-458px -105px; }
+}
+
+/******** Internet explorer *********/
+
+@-ms-keyframes animarRyu
+{
+  from { background-position:-9px -105px; }
+  to {  background-position:-458px -105px; }
+}

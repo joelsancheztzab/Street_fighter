@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8" />
+      <title>Animación con sprites ryu by Joel Sanchez</title>
+      <link href="css/estilo01.css" rel="stylesheet" type="text/css"/>
+      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src ="js/saltoKen.js"></script> 
+  </head>
+  <body>
+     <h1>Animación Css Ryu y Ken Sprites</h1>
+     <section>
+        <div class="divRyu"></div>
+        <div class="divKen"></div>
+     </section> 
+     
+  </body>
+
+</html>
