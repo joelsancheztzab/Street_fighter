@@ -59,6 +59,12 @@ section .ken
   -o-animation: animarKenSalto 1s steps( 7 ) infinite;
   -ms-animation: animarKenSalto 1s steps( 7 ) infinite;
 }
+
+section .kenAbajo
+{
+  background-position:12px -721px;
+}
+
 /*******************Ken**************************************/
 @keyframes animarKenSalto
 {
