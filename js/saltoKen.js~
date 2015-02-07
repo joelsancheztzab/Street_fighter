@@ -3,29 +3,26 @@
    this.saltoArriba = arriba;
    this.agachar = abajo;
 
-   this.salto = function(){
-      var salta = this.saltoArriba; 
+   this.saltoAgacha = function(){
+      var salta = this.saltoArriba;
+      var agachar = this.agachar; 
+      var objDivKen =  $( ".divKen" );
       $( "body" ).keydown( function( ev ){
-        
-         if ( ev.which == salta )
-            {
-              var objDivKen =  $( ".divKen" );
-              objDivKen.addClass( "ken" );
-              setTimeout( function(){ QuitarEventos( objDivKen );} , 1000 );
-            }
+         switch ( ev.which )  
+                {
+                  case salta:
+                    objDivKen.addClass( "ken" );
+                    setTimeout( function(){ QuitarEventos( objDivKen );} , 1000 );     
+                  break;
+                 
+                  case agachar :
+                    
+                    objDivKen.addClass( "kenAbajo" );
+                    setTimeout( function(){ QuitarEventos( objDivKen );} , 400 );
+                  break;
+                }
+         
       } ); 
-   }
-
-   this.abajo = function(){
-     var agachar = this.agachar;
-     $( "body" ).keydown( function( ev ){
-           if ( ev.which == agachar )
-              {
-                var objDivKen =  $( ".divKen" );
-                objDivKen.addClass( "kenAbajo" );
-                setTimeout( function(){ QuitarEventos( objDivKen );} , 400 );
-              }
-     } );  
    }
 
    var QuitarEventos = function( objDivKen ){
@@ -40,7 +37,6 @@
 
 $( document ).ready( function(){
  var objPersonajeKen = new objKen( 38, 40 );
- objPersonajeKen.salto();
- objPersonajeKen.abajo();
+ objPersonajeKen.saltoAgacha();
 
 } ); 
